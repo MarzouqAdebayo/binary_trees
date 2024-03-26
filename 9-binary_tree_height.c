@@ -3,7 +3,8 @@
 /**
  * tree_traverse - recursively measures the height of the tree
  *
- * @tree: pointer to the root node of the tree
+ * @node: pointer to the node of the tree
+ * @height: height of the node
  * Return: the height of the tree
  */
 size_t tree_traverse(const binary_tree_t *node, size_t height)
@@ -16,9 +17,9 @@ size_t tree_traverse(const binary_tree_t *node, size_t height)
 	left = tree_traverse(node->left, height);
 	right = tree_traverse(node->right, height);
 	if (left > right)
-		return left;
+		return (left);
 	else
-		return right;
+		return (right);
 }
 
 /**
