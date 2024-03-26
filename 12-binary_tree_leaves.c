@@ -4,7 +4,7 @@
  * tree_traverse - Traverses the binary tree recursively to calculate the
  * no of leaves
  * @node: Pointer to the current node
- * @size: Pointer to the variable storing the number of leaves
+ * @no_of_leaves: Pointer to the variable storing the number of leaves
  */
 void tree_traverse(const binary_tree_t *node, size_t *no_of_leaves)
 {
